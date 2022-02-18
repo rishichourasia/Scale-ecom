@@ -1,0 +1,17 @@
+.img-container {
+	margin: auto;
+	width: 95%;
+	/* display: flex; */
+	height: 80%;
+	position: relative;
+}
+
+.img-container .homepage-img {
+	width: 100%;
+	border-radius: 4px;
+}
+
+.img-text-overlay {
+	position: absolute;
+	top: 10px;
+}
