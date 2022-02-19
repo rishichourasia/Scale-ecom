@@ -24,14 +24,14 @@
 	font-family: "PT Sans Narrow", sans-serif;
 	font-size: 3rem;
 	text-align: center;
-	color: white;
+	color: var(--light-text-color);
 	font-weight: 700;
 }
 
 .image-text-overlay button {
-	background-color: white;
+	background-color: var(--light-text-color);
 	margin-top: 25px;
-	color: black;
+	color: var(--dark-text-color);
 }
 
 .desc-container {
@@ -41,13 +41,12 @@
 }
 
 .feature {
-	background-color: rgb(227 227 227);
+	background-color: var(--info-card-bg-color);
 	display: flex;
 	align-items: center;
 	margin: 15px;
 	border-radius: 5px;
-	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-		rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+	box-shadow: var(--light-box-shadow);
 	padding: 10px;
 	gap: 20px;
 	height: fit-content;

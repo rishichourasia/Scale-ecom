@@ -1,6 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600&display=swap");
 
+:root {
+	--main-bg-color: rgb(245, 245, 245);
+	--primary-color: rgb(46, 46, 46);
+	--light-box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+		rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+	--light-text-color: white;
+	--dark-text-color: black;
+	--outlined-btn-border: 1px solid rgb(46, 46, 46);
+	--info-card-bg-color: rgb(236, 236, 236);
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -8,13 +19,13 @@
 }
 
 html {
-	background-color: rgb(245, 245, 245);
+	background-color: var(--main-bg-color);
 	font-family: "Cabin", sans-serif;
 }
 
 .btn-primary {
-	background-color: rgb(46, 46, 46);
-	color: white;
+	background-color: var(--primary-color);
+	color: var(--light-text-color);
 }
 
 .btn {
@@ -30,6 +41,6 @@ html {
 
 .btn-primary-outlined {
 	background-color: transparent;
-	border: 1px solid rgb(46, 46, 46);
-	color: black;
+	border: var(--outlined-btn-border);
+	color: var(--dark-text-color);
 }
