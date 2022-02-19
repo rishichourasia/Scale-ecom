@@ -1,15 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap");
 
 :root {
-	--main-bg-color: rgb(245, 245, 245);
+	--main-bg-color: rgb(248, 248, 248);
 	--primary-color: rgb(46, 46, 46);
 	--light-box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
 		rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+	--dark-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	--light-text-color: white;
 	--dark-text-color: black;
+	--grey-text-color: rgb(92, 92, 92);
 	--outlined-btn-border: 1px solid rgb(46, 46, 46);
 	--info-card-bg-color: rgb(236, 236, 236);
+	--info-card-light-bg-color: rgb(242, 242, 242);
 }
 
 * {
