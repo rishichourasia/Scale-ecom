@@ -4,23 +4,23 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Scale Store</title>
+		<title>Wishlist</title>
 		<link
 			rel="stylesheet"
 			href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
 			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
 			crossorigin="anonymous"
 		/>
-		<!-- <link
+		<link
 			rel="stylesheet"
 			href="https://scale-ui.netlify.app/Styles/style.css"
-		/> -->
+		/>
 		<link rel="stylesheet" href="/stylesheets/header.css" />
 		<link rel="stylesheet" href="/stylesheets/main.css" />
-		<link rel="stylesheet" href="/stylesheets/productlist.css" />
+		<link rel="stylesheet" href="/stylesheets/wishlist.css" />
 	</head>
 	<body>
-		<!-- Navbar  -->
+		<!-- navbar  -->
 		<header class="nav fixed">
 			<div class="menu-logo">
 				<div class="menu-btn">
@@ -48,76 +48,13 @@
 				>
 			</div>
 		</header>
-		<!-- Navbar  -->
+		<!-- navbar -->
 
 		<!-- main  -->
-
-		<div class="main">
-			<!-- sidebar  -->
-			<div class="sidebar">
-				<div class="filter-title">
-					<p class="aside-title">Filter</p>
-					<a href="#">Clear</a>
-				</div>
-
-				<div class="quantity-slider">
-					<p class="aside-title">Price Range</p>
-					<div class="slider-range">
-						<span>50</span>
-						<span>150</span>
-						<span>200</span>
-					</div>
-					<input type="range" min="1" max="200" class="slider" />
-				</div>
-
-				<!-- sidebar  -->
-				<div class="list-container">
-					<p class="aside-title">Category</p>
-					<ol class="list">
-						<li>
-							<label><input type="checkbox" />"Stocks"</label>
-						</li>
-						<li>
-							<label><input type="checkbox" />"Stocks"</label>
-						</li>
-						<li>
-							<label><input type="checkbox" />"Stocks"</label>
-						</li>
-						<li>
-							<label><input type="checkbox" />"Stocks"</label>
-						</li>
-					</ol>
-				</div>
-				<div class="list-container">
-					<p class="aside-title">Rating</p>
-					<ol class="list">
-						<li>
-							<label><input type="radio" />4 Star and above</label>
-						</li>
-						<li>
-							<label><input type="radio" />3 Star and above</label>
-						</li>
-						<li>
-							<label><input type="radio" />2 Star and above</label>
-						</li>
-						<li>
-							<label><input type="radio" />1 Star and above</label>
-						</li>
-					</ol>
-				</div>
-				<div class="list-container">
-					<p class="aside-title">Sort By</p>
-					<ol class="list">
-						<li>
-							<label><input type="radio" />Price high to low</label>
-						</li>
-						<li>
-							<label><input type="radio" />Price low to high</label>
-						</li>
-					</ol>
-				</div>
+		<div class="wishlist">
+			<div class="title">
+				<h1>Wishlist</h1>
 			</div>
-
 			<div class="productlist">
 				<div class="product-card">
 					<div class="card-header">
@@ -127,9 +64,6 @@
 							alt="product-img"
 						/>
 						<span class="card-highlight">Top Rated</span>
-						<span class="card-icon card-hover">
-							<i class="far fa-heart fa-lg"></i>
-						</span>
 					</div>
 					<div class="card-body">
 						<div class="card-title">
@@ -143,36 +77,10 @@
 						<div class="card-cta">
 							<h2>$50</h2>
 							<button class="btn btn-primary">
-								<i class="far fa-shopping-cart fa-lg"></i> Buy Now
+								<i class="far fa-shopping-cart fa-lg"></i> Add to cart
 							</button>
-						</div>
-					</div>
-				</div>
-				<div class="product-card">
-					<div class="card-header">
-						<img
-							class="card-img"
-							src="/assets/pictures/behave.jpg"
-							alt="product-img"
-						/>
-						<span class="card-highlight">Top Rated</span>
-						<span class="card-icon card-hover">
-							<i class="far fa-heart fa-lg"></i>
-						</span>
-					</div>
-					<div class="card-body">
-						<div class="card-title">
-							<h2>Behave</h2>
-							<p>Human Psychology</p>
-						</div>
-						<p class="card-text">
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-						</p>
-
-						<div class="card-cta">
-							<h2>$50</h2>
-							<button class="btn btn-primary">
-								<i class="far fa-shopping-cart fa-lg"></i> Buy Now
+							<button class="btn btn-primary-outlined">
+								Remove from Wishlist
 							</button>
 						</div>
 					</div>
@@ -185,9 +93,6 @@
 							alt="product-img"
 						/>
 						<span class="card-highlight">Top Rated</span>
-						<span class="card-icon card-hover">
-							<i class="far fa-heart fa-lg"></i>
-						</span>
 					</div>
 					<div class="card-body">
 						<div class="card-title">
@@ -201,7 +106,39 @@
 						<div class="card-cta">
 							<h2>$50</h2>
 							<button class="btn btn-primary">
-								<i class="far fa-shopping-cart fa-lg"></i> Buy Now
+								<i class="far fa-shopping-cart fa-lg"></i> Add to cart
+							</button>
+							<button class="btn btn-primary-outlined">
+								Remove from Wishlist
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="product-card">
+					<div class="card-header">
+						<img
+							class="card-img"
+							src="/assets/pictures/behave.jpg"
+							alt="product-img"
+						/>
+						<span class="card-highlight">Top Rated</span>
+					</div>
+					<div class="card-body">
+						<div class="card-title">
+							<h2>Behave</h2>
+							<p>Self-help</p>
+						</div>
+						<p class="card-text">
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+						</p>
+
+						<div class="card-cta">
+							<h2>$50</h2>
+							<button class="btn btn-primary">
+								<i class="far fa-shopping-cart fa-lg"></i> Add to cart
+							</button>
+							<button class="btn btn-primary-outlined">
+								Remove from Wishlist
 							</button>
 						</div>
 					</div>
@@ -214,13 +151,10 @@
 							alt="product-img"
 						/>
 						<span class="card-highlight">Top Rated</span>
-						<span class="card-icon card-hover">
-							<i class="far fa-heart fa-lg"></i>
-						</span>
 					</div>
 					<div class="card-body">
 						<div class="card-title">
-							<h2>Almanac of Naval Ravikant</h2>
+							<h2>Naval Ravikant</h2>
 							<p>Self-help</p>
 						</div>
 						<p class="card-text">
@@ -230,7 +164,10 @@
 						<div class="card-cta">
 							<h2>$50</h2>
 							<button class="btn btn-primary">
-								<i class="far fa-shopping-cart fa-lg"></i> Buy Now
+								<i class="far fa-shopping-cart fa-lg"></i> Add to cart
+							</button>
+							<button class="btn btn-primary-outlined">
+								Remove from Wishlist
 							</button>
 						</div>
 					</div>
@@ -243,9 +180,6 @@
 							alt="product-img"
 						/>
 						<span class="card-highlight">Top Rated</span>
-						<span class="card-icon card-hover">
-							<i class="far fa-heart fa-lg"></i>
-						</span>
 					</div>
 					<div class="card-body">
 						<div class="card-title">
@@ -259,7 +193,10 @@
 						<div class="card-cta">
 							<h2>$50</h2>
 							<button class="btn btn-primary">
-								<i class="far fa-shopping-cart fa-lg"></i> Buy Now
+								<i class="far fa-shopping-cart fa-lg"></i> Add to cart
+							</button>
+							<button class="btn btn-primary-outlined">
+								Remove from Wishlist
 							</button>
 						</div>
 					</div>
